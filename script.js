@@ -10,6 +10,7 @@ const handleMove = (e) => {
     const max = 4;
     const height = Math.round(percent * 100) + '%';
     const playackRate = percent * (max-min) + min;
+    bar.textContent = playackRate.toFixed(2) + 'x';
     bar.style.height = height;
     video.playbackRate = playackRate;
 
